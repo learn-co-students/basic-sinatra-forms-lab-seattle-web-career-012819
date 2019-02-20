@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team Signup</title>
- </head>
- <body>
- </body>
+    <meta charset="UTF-8">
+    <title>Basketball Team Signup</title>
+    <form action="/team" method = "post">
+        <label for="name">Team Name</label>
+        <input type="text" name="name" value="">
+        <label for="Coach">Coach</label>
+        <input type="text" name="coach" value="">
+        <label for="pg">Point Guard</label>
+        <input type="text" name="pg" value="">
+        <label for="sg">Shooting Guard</label>
+        <input type="text" name="sg" value="">
+        <label for="pf">Power Forward</label>
+        <input type="text" name="pf" value="">
+        <label for="sf">Small Forward</label>
+        <input type="text" name="sf" value="">
+        <label for="c">Center</label>
+        <input type="text" name="c" value="">
+        <input type="submit" value="Submit">
+    </form>
+    </head>
+    <body>
+    </body>
+
+    <!-- Create a route that responds to a GET request at /newteam. Add a form to the newteam.erb template and render it in the GET /newteam route.
+
+The form should have fields for: Team name ('name') Coach ('coach') 
+Point Guard ('pg') Shooting Guard ('sg') Power Forward ('pf') 
+Small Forward ('sf') Center ('c')
+
+# It should look something like this: -->
 </html>
-
-
