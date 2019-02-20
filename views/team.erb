@@ -5,10 +5,9 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <h1>Team Name: <%= @team.delete("team_name")%></h1>
+   <% @team.each do |title, person| %>
+   <h2><%=title.split("_").map(&:capitalize).join(" ") + ": " +  person%></h2>
+   <% end %>
  </body>
 </html>
-
-
